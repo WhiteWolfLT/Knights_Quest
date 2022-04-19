@@ -1,2 +1,2 @@
 # Knights_Quest
-Game attemp
+This is a text game
