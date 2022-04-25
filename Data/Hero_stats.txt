@@ -1,0 +1,9 @@
+Hero()
+    {
+        name = "Knight";
+        entity_class = "hero";
+        health = 30;
+        attack = 2;
+        defence = 1;
+        dodge = 0.4;
+    }

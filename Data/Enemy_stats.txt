@@ -1,0 +1,76 @@
+Demon()
+    {
+        name = "Demon";
+        description = "A tall hideuos creature with wings and red skin";
+        entity_class = "boss";
+        health = 30;
+        attack = 6;
+        defence = 5;
+        dodge = 0.3;
+    }
+
+Giant()
+    {
+        name = "Giant";
+        description = "A giant and ugly creature. Very strong but very dumb";
+        entity_class = "boss";
+        health = 50;
+        attack = 10;
+        defence = 8;
+        dodge = 0;
+    }
+
+Goblin()
+    {
+        name = "Goblin";
+        description = "A small and vicious green creature";
+        entity_class = "enemy";
+        health = 5;
+        attack = 0;
+        defence = 0;
+        dodge = 0.25;
+    }
+
+Orc()
+    {
+        name = "Orc";
+        description = "A big and strong green creature";
+        entity_class = "enemy";
+        health = 15;
+        attack = 3;
+        defence = 3;
+        dodge = 0.05;
+    }
+
+Rat()
+    {
+        name = "Rat";
+        description = "A big furry rodent, has big claws";
+        entity_class = "enemy";
+        health = 8;
+        attack = 3;
+        defence = 1;
+        dodge = 0.4;
+    }
+
+Skeleton()
+    {
+        name = "Skeleton";
+        description = "A skeleton that walks, spooky!";
+        entity_class = "enemy";
+        health = 8;
+        attack = 3;
+        defence = 1;
+        dodge = 0.4;
+    }
+
+Zombie()
+    {
+        name = "Zombie";
+        description = "A fallen humanoid";
+        entity_class = "enemy";
+        health = 8;
+        attack = 3;
+        defence = 1;
+        dodge = 0.4;
+    }
