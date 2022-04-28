@@ -10,3 +10,18 @@ Enemy::Enemy(std::string m_name, std::string m_description, int m_health, int m_
 	dodge = m_dodge;
 	attacks = m_attack;
 }
+
+void Enemy::Input()
+{
+	std::cout << "It's a " << name << std::endl;
+}
+
+void Enemy::Get_name()
+{
+	std::cout << name << std::endl;
+}
+
+void Enemy::Examine()
+{
+	std::cout << description << std::endl;
+}

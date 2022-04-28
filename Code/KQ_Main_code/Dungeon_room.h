@@ -4,7 +4,7 @@
 #include "Consumable.h"
 #include "Weapon.h"
 #include "Wearable.h"
-class Dungeon_room : private Room
+class Dungeon_room : public Room
 {
 public:
 	std::string description;
@@ -22,11 +22,11 @@ public:
 
 	void Interface::Get_name() override
 	{
-		std::cout << name << std::endl;
+		std::cout << Dungeon_room::name << std::endl;
 	};
 
 	void Interface::Examine() override
 	{
-		std::cout << description << std::endl;
+		std::cout << Dungeon_room::description << std::endl;
 	};
 };

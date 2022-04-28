@@ -6,5 +6,11 @@ public:
 
     int difficulty;
 
-    Game_Logic();
+    //Game_Logic(int m_difficulty);
+    //
+    //void Input() override;
+    //
+    //void Get_name() override;
+    //
+    //void Examine() override;
 };

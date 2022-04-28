@@ -20,6 +20,7 @@ int main()
     hard = 3
     */
     int difficulty = 2;
+
     //srand(time(0));
     Dungeon_room room(difficulty);
     //Game_Logic Game;

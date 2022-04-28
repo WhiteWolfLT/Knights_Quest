@@ -51,14 +51,20 @@
     <ClCompile Include="Item.h">
       <Filter>Header Files\Items</Filter>
     </ClCompile>
-    <ClCompile Include="Item.cpp">
+    <ClCompile Include="Weapon.cpp">
       <Filter>Source Files\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_logic.cpp">
+      <Filter>Source Files\Logic</Filter>
     </ClCompile>
     <ClCompile Include="Dungeon_room.cpp">
       <Filter>Source Files\Rooms</Filter>
     </ClCompile>
-    <ClCompile Include="Game_logic.cpp">
-      <Filter>Source Files\Logic</Filter>
+    <ClCompile Include="Wearable.cpp">
+      <Filter>Source Files\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Consumable.cpp">
+      <Filter>Source Files\Items</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

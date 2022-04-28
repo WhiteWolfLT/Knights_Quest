@@ -1,6 +1,6 @@
 #pragma once
 #include "Interface.h"
-class Entity : protected Interface
+class Entity : public Interface
 {
 protected:
     std::string name;
@@ -10,23 +10,6 @@ protected:
     int attack;
     int defence;
     double dodge;
-
 	int attacks;
 
-public:
-
-	void Interface::Input() override
-	{
-		std::cout << "temp";
-	};
-
-	void Interface::Get_name() override
-	{
-		std::cout << name << std::endl;
-	};
-
-	void Interface::Examine() override
-	{
-		std::cout << description << std::endl;
-	};
 };
