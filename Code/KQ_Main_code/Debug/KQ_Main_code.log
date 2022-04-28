@@ -1,2 +1,8 @@
-﻿  KQ_Main_code.cpp
+﻿  Dungeon_room.cpp
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Dungeon_room.cpp(5,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Enemy.cpp
+  Hero.cpp
+  Item.h
+  KQ_Main_code.cpp
+  Generating Code...
   KQ_Main_code.vcxproj -> D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Debug\Knights_quest.exe

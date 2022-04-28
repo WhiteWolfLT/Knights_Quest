@@ -1,6 +1,7 @@
 #pragma once
-#include "Class_file.h"
-class Menu : public Room
+#include "Room.h"
+//#include <string>
+class Game_logic : public Room
 {
 	std::vector<std::string> List_of_options;
 };

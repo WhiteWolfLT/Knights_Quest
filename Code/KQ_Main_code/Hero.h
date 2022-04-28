@@ -1,17 +1,31 @@
 #pragma once
-#include "Class_file.h"
-#include <string>
-#include <vector>
+#include "Entity.h"
+#include "Item.h"
+
 class Hero : protected Entity
 {
 private:
-    std::vector<std::string> Inventory;
-    std::string left_hand = "fist";
-    std::string right_hand = "fist";
-    std::string head = "empty";
-    std::string chest = "empty";
-    std::string feet = "empty";
-    std::string neck = "empty";
-    std::string hands = "empty";
-    std::string finger = "empty";
+    std::vector<std::pair<Item*, int>> Inventory;
+    std::vector<Item*> Equiped_Items;
+
+
+    //clothes (equiped,empty);
+    //clothes equiped[0];
+    // map::clothes.insert(pair<std::string, std::string>("left_hand","empty");
+    //std::string right_hand = "fist";
+    //equiped["head"] = "empty";
+    //std::string head = "empty";
+    //std::string chest = "empty";
+    //std::string feet = "empty";
+    //std::string neck = "empty";
+    //std::string hands = "empty";
+    //std::string finger = "empty";
+
+
+
+public:
+    //void Equip_item();
+    //void Acclimation();
+
+    
 };

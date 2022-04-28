@@ -140,15 +140,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dungeon_room.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Game_logic.cpp" />
+    <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Item.h" />
     <ClCompile Include="KQ_Main_code.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Class_file.h" />
+    <ClInclude Include="Interface.h" />
     <ClInclude Include="Consumable.h" />
     <ClInclude Include="Dungeon_room.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Game_logic.h" />
     <ClInclude Include="Hero.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="Room.h" />
     <ClInclude Include="Weapon.h" />
     <ClInclude Include="Wearable.h" />
   </ItemGroup>

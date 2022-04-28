@@ -4,13 +4,27 @@
 #include <iostream>
 #include <iomanip>
 #include <vector>
-#include "Class_file.h"
-
+#include "Interface.h"
+#include "Dungeon_room.h"
+#include "Enemy.h"
+#include <time.h>
 using namespace std;
 
 
 int main()
 {
+    /*
+    difficulty translation
+    easy = 1
+    medium = 2
+    hard = 3
+    */
+    int difficulty = 2;
+    //srand(time(0));
+    Dungeon_room room(difficulty);
+    //Game_Logic Game;
+    //int temp = std::rand() % 3 + 1;
+    //std::cout << std::endl << temp << std::endl;
     std::cout << "Hello World!\n";
 }
 
