@@ -9,7 +9,7 @@ protected:
 
 	virtual void Input() = 0;
 
-	virtual void Get_name() = 0;
+	virtual std::string Get_name() = 0;
 
 	virtual void Examine() = 0;
 	////entity functions

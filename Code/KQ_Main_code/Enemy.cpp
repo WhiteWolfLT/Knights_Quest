@@ -101,7 +101,7 @@ void Enemy::Input()
 	std::cout << "It's a " << name << std::endl;
 }
 
-void Enemy::Get_name()
+std::string Enemy::Get_name()
 {
 	std::cout << name << std::endl;
 }

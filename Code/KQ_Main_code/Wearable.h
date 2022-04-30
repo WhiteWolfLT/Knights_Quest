@@ -12,9 +12,11 @@ public:
 
 	Wearable();
 
+	std::string Get_slot();
+
 	void Input() override;
 
-	void Get_name() override;
+	std::string Get_name() override;
 
 	void Examine() override;
 

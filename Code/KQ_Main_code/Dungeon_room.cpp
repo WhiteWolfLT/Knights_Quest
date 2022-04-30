@@ -87,6 +87,9 @@ Dungeon_room::Dungeon_room(int m_difficulty)
 	{
 		List_of_enemies[i].Get_name();
 	}
+
+	Hero Knight;
+	Knight.Display_inventory();
 }
 
 void Dungeon_room::Input()
@@ -94,7 +97,7 @@ void Dungeon_room::Input()
 	std::cout << "nothing is here yet" << std::endl;
 }
 
-void Dungeon_room::Get_name()
+std::string Dungeon_room::Get_name()
 {
 	std::cout << name << std::endl;
 }

@@ -21,7 +21,6 @@ Consumable::Consumable(std::string m_name, std::string m_description, std::strin
 	second_target = m_second_target;
 	second_value = m_second_value;
 	uses = m_uses;
-
 };
 
 Consumable::Consumable()
@@ -80,6 +79,16 @@ Consumable::Consumable()
 		second_value = 0;
 		uses = 1;
 	}
+	else
+	{
+		name = "Health potion";
+		description = "Heals you";
+		first_target = "health";
+		first_value = 5;
+		second_target = "";
+		second_value = 0;
+		uses = 1;
+	}
 };
 
 void Consumable::Input()
@@ -87,9 +96,9 @@ void Consumable::Input()
 	std::cout << "It's a " << name << std::endl;
 }
 
-void Consumable::Get_name()
+std::string Consumable::Get_name()
 {
-	std::cout << name << std::endl;
+	return name;
 }
 
 void Consumable::Examine()

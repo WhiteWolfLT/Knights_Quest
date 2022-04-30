@@ -1,5 +1,6 @@
 #pragma once
 #include "Room.h"
+#include "Hero.h"
 #include "Enemy.h"
 #include "Consumable.h"
 #include "Weapon.h"
@@ -19,7 +20,7 @@ public:
 
 	void Input() override;
 
-	void Get_name() override;
+	std::string Get_name() override;
 
 	void Examine() override;
 };

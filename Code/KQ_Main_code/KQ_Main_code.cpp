@@ -22,6 +22,7 @@ int main()
     hard = 3
     */
     int difficulty = 2;
+    string player_input;
 
     //srand(time(0));
     Dungeon_room room(difficulty);

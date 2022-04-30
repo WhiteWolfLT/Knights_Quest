@@ -1,3 +1,8 @@
 ﻿  Dungeon_room.cpp
 D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Dungeon_room.cpp(6,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Hero.cpp
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(19,21): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(32,21): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(45,21): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   KQ_Main_code.vcxproj -> D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Debug\Knights_quest.exe

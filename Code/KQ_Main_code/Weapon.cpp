@@ -100,16 +100,27 @@ Weapon::Weapon()
 		second_value = -0.04;
 		slot_size = 1;
 	}
+	else
+	{
+		name = "Hand Axe";
+		description = "A steel axe, good for cutting trees down";
+		first_target = "attack";
+		first_value = 6;
+		second_target = "dodge";
+		second_value = -0.05;
+		slot_size = 1;
+	}
 };
 
 void Weapon::Input()
 {
 	std::cout << "Nothing is here" << std::endl;
+
 }
 
-void Weapon::Get_name()
+std::string Weapon::Get_name()
 {
-	std::cout << name << std::endl;
+	return name;
 }
 
 void Weapon::Examine()

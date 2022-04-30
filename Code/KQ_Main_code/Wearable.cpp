@@ -99,14 +99,19 @@ Wearable::Wearable()
 	}
 };
 
+std::string Wearable::Get_slot()
+{
+	return equipment_slot;
+}
+
 void Wearable::Input()
 {
 	std::cout << "Nothing is here" << std::endl;
 }
 
-void Wearable::Get_name()
+std::string Wearable::Get_name()
 {
-	std::cout << name << std::endl;
+	return name;
 }
 
 void Wearable::Examine()

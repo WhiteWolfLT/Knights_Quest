@@ -16,7 +16,7 @@ public:
 
 	void Input() override;
 
-	void Get_name() override;
+	std::string Get_name() override;
 
 	void Examine() override;
 };
