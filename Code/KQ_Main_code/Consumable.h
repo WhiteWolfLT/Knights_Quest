@@ -5,8 +5,14 @@ class Consumable : protected Item
 {
 private:
 	std::string affect_type;
-	int use_amount;
-	Consumable(std::string m_name, std::string m_description, int affects, std::string first_target, int first_value, std::string second_target, int second_value);
+	int uses;
+
+public:
+	Consumable(std::string m_name, std::string m_description, std::string m_first_target, double m_first_value, int m_uses);
+
+	Consumable(std::string m_name, std::string m_description, std::string m_first_target, double m_first_value, std::string m_second_target, double m_second_value, int m_uses);
+
+	Consumable();
 
 	void Input() override;
 

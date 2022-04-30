@@ -1,12 +1,11 @@
 #pragma once
 #include "Entity.h"
-#include "Item.h"
 
 class Hero : protected Entity
 {
 private:
-    std::vector<std::pair<Item*, int>> Inventory;
-    std::vector<Item*> Equiped_Items;
+    //std::vector<std::pair<Item*, int>> Inventory;
+    //std::vector<Item*> Equiped_Items;
 
 
     //clothes (equiped,empty);
@@ -24,6 +23,7 @@ private:
 
 
 public:
+    void Display_inventory();
     //void Equip_item();
     //void Acclimation();
 

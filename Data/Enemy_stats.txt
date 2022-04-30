@@ -3,10 +3,11 @@ Demon()
         name = "Demon";
         description = "A tall hideuos creature with wings and red skin";
         entity_class = "boss";
-        health = 30;
-        attack = 6;
+        health = 40;
+        attack = 10;
         defence = 5;
         dodge = 0.3;
+	attacks = 1;
     }
 
 Giant()
@@ -14,10 +15,11 @@ Giant()
         name = "Giant";
         description = "A giant and ugly creature. Very strong but very dumb";
         entity_class = "boss";
-        health = 50;
-        attack = 10;
+        health = 60;
+        attack = 15;
         defence = 8;
         dodge = 0;
+	attacks = 1;
     }
 
 Goblin()
@@ -29,6 +31,7 @@ Goblin()
         attack = 0;
         defence = 0;
         dodge = 0.25;
+	attacks = 1;
     }
 
 Orc()
@@ -40,6 +43,7 @@ Orc()
         attack = 3;
         defence = 3;
         dodge = 0.05;
+	attacks = 1;
     }
 
 Rat()
@@ -51,6 +55,7 @@ Rat()
         attack = 3;
         defence = 1;
         dodge = 0.4;
+	attacks = 1;
     }
 
 Skeleton()
@@ -62,6 +67,7 @@ Skeleton()
         attack = 3;
         defence = 1;
         dodge = 0.4;
+	attacks = 1;
     }
 
 Zombie()
@@ -73,4 +79,5 @@ Zombie()
         attack = 3;
         defence = 1;
         dodge = 0.4;
+	attacks = 1;
     }

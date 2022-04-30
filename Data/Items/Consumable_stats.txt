@@ -1,0 +1,40 @@
+
+name = "Health potion";
+description = "Heals you";
+first_target = "health";
+first_value = 5;
+second_target = "";
+second_value = 0;
+uses = 1;
+
+name = "Big health potion";
+description = "Heals you but you can use it 2 times";
+first_target = "health";
+first_value = 5;
+second_target = "";
+second_value = 0;
+uses = 2;
+
+name = "Attack potion";
+description = "Increases your damage";
+first_target = "damage";
+first_value = 1;
+second_target = "";
+second_value = 0;
+uses = 1;
+
+name = "Defence potion";
+description = "Increases your armour";
+first_target = "defence";
+first_value = 1;
+second_target = "";
+second_value = 0;
+uses = 1;
+
+name = "Agility potion";
+description = "Increases your dodge";
+first_target = "dodge";
+first_value = 0.1;
+second_target = "";
+second_value = 0;
+uses = 1;

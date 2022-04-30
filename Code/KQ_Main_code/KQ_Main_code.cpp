@@ -4,10 +4,12 @@
 #include <iostream>
 #include <iomanip>
 #include <vector>
+#include <time.h>
+
 #include "Interface.h"
 #include "Dungeon_room.h"
 #include "Enemy.h"
-#include <time.h>
+
 using namespace std;
 
 

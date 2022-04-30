@@ -1,0 +1,75 @@
+
+head
+
+name = "Steel helmet";
+description = "A simple helmet, protects the skull";
+first_target = "defence";
+first_value = 2;
+second_target = "dodge";
+second_value = -0.02;
+equipment_slot = "head";
+
+name = "Leather cowl";
+description = "A simple hood, looks cool";
+first_target = "defence";
+first_value = 0;
+second_target = "dodge";
+second_value = 0.01;
+equipment_slot = "head";
+
+chest
+
+name = "Steel armour";
+description = "A set of steel armour, very shinny";
+first_target = "defence";
+first_value = 4;
+second_target = "dodge";
+second_value = -0.2;
+equipment_slot = "chest";
+
+name = "Leather armour";
+description = "A set of leather armour";
+first_target = "defence";
+first_value = 2;
+second_target = "dodge";
+second_value = 0.02;
+equipment_slot = "chest";
+
+hands
+
+name = "Steel gauntlets";
+description = "A pair of steel gauntlets";
+first_target = "defence";
+first_value = 2;
+second_target = "dodge";
+second_value = -0.02;
+equipment_slot = "hands";
+
+name = "Leather gloves";
+description = "A pair of leather gloves";
+first_target = "defence";
+first_value = 1;
+second_target = "dodge";
+second_value = 0.02;
+equipment_slot = "hands";
+
+legs
+
+name = "Steel boots";
+description = "A pair of steel boots";
+first_target = "defence";
+first_value = 2;
+second_target = "dodge";
+second_value = -0.03;
+equipment_slot = "feet";
+
+name = "Leather boots";
+description = "A pair of leather boots";
+first_target = "defence";
+first_value = 1;
+second_target = "dodge";
+second_value = 0.03;
+equipment_slot = "feet";
+
+
+

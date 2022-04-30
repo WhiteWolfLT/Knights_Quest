@@ -6,13 +6,11 @@ public:
     std::string name;
     std::string description;
 
-    int affects;
-
     std::string first_target;
-    int first_value;
+    double first_value;
 
     std::string second_target;
-    int second_value;
+    double second_value;
 
     //void Get_affects() override;
 };

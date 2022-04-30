@@ -4,6 +4,6 @@ Hero()
         entity_class = "hero";
         health = 30;
         attack = 2;
-        defence = 1;
-        dodge = 0.4;
+        defence = 0;
+        dodge = 0.20;
     }
