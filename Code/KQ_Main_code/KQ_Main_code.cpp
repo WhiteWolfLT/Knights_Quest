@@ -21,11 +21,18 @@ int main()
     medium = 2
     hard = 3
     */
-    int difficulty = 2;
+    int difficulty = 2, number_of_rooms;
     string player_input;
+    vector<Dungeon_room> rooms;
 
     //srand(time(0));
-    Dungeon_room room(difficulty);
+    //picks a number between 9 and 6
+   // number_of_rooms = std::rand() % 9 + 6;
+   // for (int i = 0; i < number_of_rooms; i++)
+   // {
+        Dungeon_room generated_room(difficulty);
+    //    rooms.push_back(generated_room);
+    //}
     //Game_Logic Game;
     //int temp = std::rand() % 3 + 1;
     //std::cout << std::endl << temp << std::endl;

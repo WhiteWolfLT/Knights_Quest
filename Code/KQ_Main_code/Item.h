@@ -11,6 +11,5 @@ public:
 
     std::string second_target;
     double second_value;
-
     //void Get_affects() override;
 };

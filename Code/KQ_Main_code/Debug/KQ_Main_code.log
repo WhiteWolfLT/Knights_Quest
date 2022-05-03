@@ -1,8 +1,46 @@
-﻿  Dungeon_room.cpp
-D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Dungeon_room.cpp(6,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Hero.cpp
-D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(19,21): warning C4018: '<': signed/unsigned mismatch
-D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(32,21): warning C4018: '<': signed/unsigned mismatch
-D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(45,21): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
+﻿  Hero.cpp
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(18,21): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(23,28): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(25,28): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(27,29): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(38,29): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(40,29): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(42,30): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(54,21): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(59,28): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(61,28): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(63,29): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(74,29): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(76,29): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(78,30): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(100,21): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(105,28): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(107,28): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(109,29): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(120,29): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(122,29): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(124,30): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(135,21): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(140,28): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(142,28): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(144,29): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(155,29): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(157,29): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(159,30): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(217,20): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(264,20): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(305,26): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(307,26): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(309,27): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(314,27): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(316,27): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(318,28): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(338,21): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(366,21): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(394,21): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(423,21): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(436,21): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(449,21): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(484,21): warning C4018: '<': signed/unsigned mismatch
+D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Hero.cpp(499,21): warning C4018: '<': signed/unsigned mismatch
   KQ_Main_code.vcxproj -> D:\My_files\Projects\Coding\Knights_Quest\Code\KQ_Main_code\Debug\Knights_quest.exe

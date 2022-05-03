@@ -19,4 +19,11 @@ public:
 
 	void Examine() override;
 
+	void Get_affects(std::string& m_first_target, double& m_first_value, std::string& m_second_target, double& m_second_value, int& m_slot_size);
+
+	std::string Get_first_target();
+	int Get_first_value();
+	std::string Get_second_target();
+	int Get_second_value();
+
 };

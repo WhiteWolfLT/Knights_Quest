@@ -88,8 +88,25 @@ Dungeon_room::Dungeon_room(int m_difficulty)
 		List_of_enemies[i].Get_name();
 	}
 
-	Hero Knight;
-	Knight.Display_inventory();
+	//Hero Knight;
+	////Knight.Display_equipment();
+	//Knight.Display_stats();
+	//Weapon generated_weapon;
+	//Knight.Add_weapon_to_inventory(generated_weapon);
+	//Knight.Display_inventory();
+	//Knight.Equip_weapon(0);
+	//Knight.Unequip_weapon(0);
+	//Knight.Display_inventory();
+	//Knight.Equip_weapon(0);
+	//Knight.Display_inventory();
+	//Knight.Display_inventory();
+	//Knight.Consume_consumable(0);
+	//system("cls");
+	//Knight.Display_stats();
+	//system("pause") 5000;
+	//system("cls");
+	//Knight.Display_inventory();
+	//Weapon left_hand("Hand", "Empty hand", "", 0.0, "", 0.0, 0);
 }
 
 void Dungeon_room::Input()
@@ -99,7 +116,7 @@ void Dungeon_room::Input()
 
 std::string Dungeon_room::Get_name()
 {
-	std::cout << name << std::endl;
+	return name;
 }
 
 void Dungeon_room::Examine()

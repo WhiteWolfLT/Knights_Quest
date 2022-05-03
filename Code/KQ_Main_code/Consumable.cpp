@@ -105,3 +105,12 @@ void Consumable::Examine()
 {
 	std::cout << description << std::endl;
 }
+
+void Consumable::Get_affects(std::string &m_first_target, double& m_first_value, std::string &m_second_target, double &m_second_value, int &m_uses)
+{
+	m_first_target = first_target;
+	m_first_value = first_value;
+	m_second_target = second_target;
+	m_second_value = second_value;
+	m_uses = uses;
+}

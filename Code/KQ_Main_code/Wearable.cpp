@@ -118,3 +118,12 @@ void Wearable::Examine()
 {
 	std::cout << description << std::endl;
 }
+
+void Wearable::Get_affects(std::string& m_first_target, double& m_first_value, std::string& m_second_target, double& m_second_value, std::string& m_equipment_slot)
+{
+	m_first_target = first_target;
+	m_first_value = first_value;
+	m_second_target = second_target;
+	m_second_value = second_value;
+	m_equipment_slot = equipment_slot;
+}

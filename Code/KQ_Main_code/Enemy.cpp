@@ -103,7 +103,7 @@ void Enemy::Input()
 
 std::string Enemy::Get_name()
 {
-	std::cout << name << std::endl;
+	return name;
 }
 
 void Enemy::Examine()

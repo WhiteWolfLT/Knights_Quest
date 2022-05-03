@@ -127,3 +127,32 @@ void Weapon::Examine()
 {
 	std::cout << description << std::endl;
 }
+
+std::string Weapon::Get_first_target()
+{
+	return first_target;
+}
+
+int Weapon::Get_first_value()
+{
+	return first_value;
+}
+
+std::string Weapon::Get_second_target()
+{
+	return second_target;
+}
+
+int Weapon::Get_second_value()
+{
+	return second_value;
+}
+
+void Weapon::Get_affects(std::string& m_first_target, double& m_first_value, std::string& m_second_target, double& m_second_value, int& m_slot_size)
+{
+	m_first_target = first_target;
+	m_first_value = first_value;
+	m_second_target = second_target;
+	m_second_value = second_value;
+	m_slot_size = slot_size;
+}
