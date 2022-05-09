@@ -13,18 +13,12 @@
 //
 //};
 
-Weapon::Weapon(std::string m_name, std::string m_description, std::string m_first_target, double m_first_value, std::string m_second_target, double m_second_value, int m_slot_size)
+Weapon::Weapon(std::string m_name, std::string m_description, std::string m_first_target, double m_first_value, std::string m_second_target, double m_second_value, int m_slot_size) : Item(m_name, m_description, m_first_target, m_first_value, m_second_target, m_second_value)
 {
-	name = m_name;
-	description = m_description;
-	first_target = m_first_target;
-	first_value = m_first_value;
-	second_target = m_second_target;
-	second_value = m_second_value;
 	slot_size = m_slot_size;
 };
 
-Weapon::Weapon()
+Weapon::Weapon() : Item()
 {
 	//generates a number between 1 and 7 to generate a weapon
 	int item = std::rand() % 7 + 1;
@@ -112,47 +106,16 @@ Weapon::Weapon()
 	}
 };
 
-void Weapon::Input()
-{
-	std::cout << "Nothing is here" << std::endl;
-
-}
-
-std::string Weapon::Get_name()
-{
-	return name;
-}
-
-void Weapon::Examine()
-{
-	std::cout << description << std::endl;
-}
-
-std::string Weapon::Get_first_target()
-{
-	return first_target;
-}
-
-int Weapon::Get_first_value()
-{
-	return first_value;
-}
-
-std::string Weapon::Get_second_target()
-{
-	return second_target;
-}
-
-int Weapon::Get_second_value()
-{
-	return second_value;
-}
-
-void Weapon::Get_affects(std::string& m_first_target, double& m_first_value, std::string& m_second_target, double& m_second_value, int& m_slot_size)
+void Weapon::Get_affects(std::string& m_first_target, double& m_first_value, std::string& m_second_target, double& m_second_value, int& m_special)
 {
 	m_first_target = first_target;
 	m_first_value = first_value;
 	m_second_target = second_target;
 	m_second_value = second_value;
-	m_slot_size = slot_size;
+	m_special = slot_size;
+}
+
+void Weapon::Examine()
+{
+	std::cout << "TEMP" << std::endl;
 }

@@ -68,6 +68,16 @@ Enemy::Enemy()
 		dodge = 0;
 		attacks = 1;
 	}
+	else
+	{
+		name = "Goblin";
+		description = "A small and vicious green creature";
+		health = 5;
+		attack = 2;
+		defence = 0;
+		dodge = 0.15;
+		attacks = 1;
+	}
 
 	//picks a number between 2 and 0
 	int item_number = std::rand() % 2;
@@ -75,24 +85,30 @@ Enemy::Enemy()
 	for (int i = 0; i < item_number; i++)
 	{
 		int type = std::rand() % 3 + 1;
-
+	
 		if (type == 1)
-		{
-			Weapon generated_item;
-			List_of_weapon_items.push_back(generated_item);
-		}
-
+			Inventory.push_back(new Weapon);
+	
 		else if (type == 2)
-		{
-			Wearable generated_item;
-			List_of_wearable_items.push_back(generated_item);
-		}
-
+			
+			Inventory.push_back(new Wearable);
+	
 		else if (type == 3)
-		{
-			Consumable generated_item;
-			List_of_consumable_items.push_back(generated_item);
-		}
+			Inventory.push_back(new Consumable);
+	}
+}
+
+int Enemy::Get_health()
+{
+	return health;
+}
+
+void Enemy::Transfer_items(std::vector <Item*> & m_vector)
+{
+	for (int i = 0; i < Inventory.size(); i++)
+	{
+		m_vector.push_back(Inventory[i]);
+		Inventory.erase(Inventory.begin() + i);
 	}
 }
 

@@ -1,29 +1,11 @@
 #include "Consumable.h"
 
-Consumable::Consumable(std::string m_name, std::string m_description, std::string m_first_target, double m_first_value, int m_uses)
+Consumable::Consumable(std::string m_name, std::string m_description, std::string m_first_target, double m_first_value, std::string m_second_target, double m_second_value, int m_uses) : Item(m_name, m_description, m_first_target, m_first_value, m_second_target, m_second_value)
 {
-	name = m_name;
-	description = m_description;
-	first_target = m_first_target;
-	first_value = m_first_value;
-	second_target = "";
-	second_value = 0;
-	uses = m_uses;
-
-};
-
-Consumable::Consumable(std::string m_name, std::string m_description, std::string m_first_target, double m_first_value, std::string m_second_target, double m_second_value, int m_uses)
-{
-	name = m_name;
-	description = m_description;
-	first_target = m_first_target;
-	first_value = m_first_value;
-	second_target = m_second_target;
-	second_value = m_second_value;
 	uses = m_uses;
 };
 
-Consumable::Consumable()
+Consumable::Consumable() : Item()
 {
 	//generates a number between 1 and 5 to generate a consumable
 	int item = std::rand() % 5 + 1;
@@ -91,26 +73,16 @@ Consumable::Consumable()
 	}
 };
 
-void Consumable::Input()
-{
-	std::cout << "It's a " << name << std::endl;
-}
-
-std::string Consumable::Get_name()
-{
-	return name;
-}
-
-void Consumable::Examine()
-{
-	std::cout << description << std::endl;
-}
-
-void Consumable::Get_affects(std::string &m_first_target, double& m_first_value, std::string &m_second_target, double &m_second_value, int &m_uses)
+void Consumable::Get_affects(std::string &m_first_target, double& m_first_value, std::string &m_second_target, double &m_second_value, int& m_special)
 {
 	m_first_target = first_target;
 	m_first_value = first_value;
 	m_second_target = second_target;
 	m_second_value = second_value;
-	m_uses = uses;
+	m_special = uses;
+}
+
+void Consumable::Examine()
+{
+	std::cout << "TEMP" << std::endl;
 }

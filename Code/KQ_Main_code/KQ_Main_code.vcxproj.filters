@@ -22,20 +22,14 @@
     <Filter Include="Header Files\Rooms">
       <UniqueIdentifier>{1dfd8fb7-cf70-4b58-ad36-f81175f108d0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Logic">
-      <UniqueIdentifier>{dbcfda21-01b3-4b10-89c3-5543a40e9f0b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Entities">
       <UniqueIdentifier>{09763bf9-1cb5-4b38-ade5-f6ec354e5453}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Rooms">
-      <UniqueIdentifier>{83828412-bc96-4da4-bee7-8c92dd3d9823}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Logic">
-      <UniqueIdentifier>{00dc93eb-fdc0-47b2-b965-805b5ad0110f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Items">
       <UniqueIdentifier>{402aa2c8-a5f1-459d-83c2-6c00933e9cf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rooms">
+      <UniqueIdentifier>{83828412-bc96-4da4-bee7-8c92dd3d9823}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -54,9 +48,6 @@
     <ClCompile Include="Weapon.cpp">
       <Filter>Source Files\Items</Filter>
     </ClCompile>
-    <ClCompile Include="Game_logic.cpp">
-      <Filter>Source Files\Logic</Filter>
-    </ClCompile>
     <ClCompile Include="Dungeon_room.cpp">
       <Filter>Source Files\Rooms</Filter>
     </ClCompile>
@@ -65,6 +56,15 @@
     </ClCompile>
     <ClCompile Include="Consumable.cpp">
       <Filter>Source Files\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files\Entities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -92,14 +92,17 @@
     <ClInclude Include="Dungeon_room.h">
       <Filter>Header Files\Rooms</Filter>
     </ClInclude>
-    <ClInclude Include="Game_logic.h">
-      <Filter>Header Files\Logic</Filter>
-    </ClInclude>
     <ClInclude Include="Entity.h">
       <Filter>Header Files\Entities</Filter>
     </ClInclude>
     <ClInclude Include="Room.h">
       <Filter>Header Files\Rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="IItem.h">
+      <Filter>Header Files\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="IEntity.h">
+      <Filter>Header Files\Entities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

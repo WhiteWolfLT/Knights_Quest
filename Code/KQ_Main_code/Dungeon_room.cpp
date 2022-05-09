@@ -2,19 +2,11 @@
 //#include "Enemy.h"
 Dungeon_room::Dungeon_room(int m_difficulty)
 {
-	//Creates a seed based on time for random number generation, time is from the time.h library
-	srand(time(0));
+	name = "Dungeon";
+	description = "a spooky dungeon room, chains and skulls are everywhere";
 
 	int enemy_number = 1;
 	int item_number = 1, type = 3;
-
-	//int weapon_number = 1, weapon;
-	//int consumable_number = 1, consumable;
-	//int wearable_number = 1, werable;
-
-	//Consumable generated_item("Health potion", "Heals you", 1 , "health", 5, 1);
-	//List_of_items.push_back(generated_item);
-	//List_of_items
 
 	/*
 	difficulty translation
@@ -51,62 +43,112 @@ Dungeon_room::Dungeon_room(int m_difficulty)
 		item_number = 1;
 		break;
 	}
-
+	
 	//Enemy generation in a room
 	for (int i = 0; i < enemy_number; i++)
 	{
 		Enemy generated_enemy;
 		List_of_enemies.push_back(generated_enemy);
-	}	
-
-	//Item generation in a room
+	}
+	
 	for (int i = 0; i < item_number; i++)
 	{
 		type = std::rand() % 3 + 1;
-
+	
 		if (type == 1)
-		{
-			Weapon generated_item;
-			List_of_weapon_items.push_back(generated_item);
-		}
-
+			List_of_items.push_back(new Weapon);
+	
 		else if (type == 2)
-		{
-			Wearable generated_item;
-			List_of_wearable_items.push_back(generated_item);
-		}
-
+			List_of_items.push_back(new Wearable);
+	
 		else if (type == 3)
+			List_of_items.push_back(new Consumable);
+	}
+}
+int Dungeon_room::Combat(Hero m_hero)
+{
+	int attack_chance = 0, return_number = 0;
+	int n_attacks = 0, n_dodge_chance = 0;
+	double n_attack = 0, n_defend = 0, n_dodge = 0;
+	int m_attacks = 0, m_dodge_chance = 0;
+	double m_attack = 0, m_defend = 0, m_dodge = 0;
+
+	m_hero.Attack(m_attack, m_attacks);
+	m_hero.Defend(m_defend, m_dodge);
+	m_dodge_chance = m_dodge * 100;
+
+	for (int i = 0; i < List_of_enemies.size(); i++)
+	{
+		List_of_enemies[i].Attack(n_attack, n_attacks);
+		
+		for (int l = 0; l < n_attacks; l++)
 		{
-			Consumable generated_item;
-			List_of_consumable_items.push_back(generated_item);
+			attack_chance = std::rand() % 100;
+			if (attack_chance > m_dodge_chance)
+			{
+				n_attack -= m_defend;
+				if (n_attack > 0)
+					return_number += n_attack;
+			}
 		}
 	}
 
-	for (int i = 0; i < enemy_number; i++)
+	List_of_enemies[0].Defend(n_defend, n_dodge);
+	n_dodge_chance = n_dodge * 100;
+	attack_chance = std::rand() % 100;
+
+	if (attack_chance > n_dodge_chance)
 	{
-		List_of_enemies[i].Get_name();
+		m_attack -= n_defend;
+		if (n_attack > 0)
+			List_of_enemies[0].Damage(n_attack);
+		if (List_of_enemies[0].Get_health() <= 0)
+		{
+			List_of_enemies[0].Transfer_items(List_of_items);
+			List_of_enemies.erase(List_of_enemies.begin() + 0);
+		}
+	}
+	return return_number;
+}
+
+void Dungeon_room::Display_room()
+{
+	std::cout << "You're in " << description << std::endl << std::endl;
+
+	if (List_of_enemies.size() > 0)
+	{
+		std::cout << "You are surrounded by :" << std::endl << std::endl;
+		for (int i = 0; i < List_of_enemies.size(); i++)
+		{
+			std::cout << List_of_enemies[i].Get_name() << std::endl;
+		}
+		std::cout << std::endl;
+		std::cout << "What do you want to do? :" << std::endl << std::endl;	
+		std::cout << "Fight" << std::endl;
+		std::cout << "Search" << std::endl;
+		std::cout << "Backtrack" << std::endl;
+		std::cout << "Inventory" << std::endl;
+		std::cout << "Quit" << std::endl << std::endl;
 	}
 
-	//Hero Knight;
-	////Knight.Display_equipment();
-	//Knight.Display_stats();
-	//Weapon generated_weapon;
-	//Knight.Add_weapon_to_inventory(generated_weapon);
-	//Knight.Display_inventory();
-	//Knight.Equip_weapon(0);
-	//Knight.Unequip_weapon(0);
-	//Knight.Display_inventory();
-	//Knight.Equip_weapon(0);
-	//Knight.Display_inventory();
-	//Knight.Display_inventory();
-	//Knight.Consume_consumable(0);
-	//system("cls");
-	//Knight.Display_stats();
-	//system("pause") 5000;
-	//system("cls");
-	//Knight.Display_inventory();
-	//Weapon left_hand("Hand", "Empty hand", "", 0.0, "", 0.0, 0);
+	if (List_of_enemies.size() == 0)
+	{
+		std::cout << "What do you want to do? :" << std::endl << std::endl;
+		std::cout << "Forward" << std::endl;
+		std::cout << "Backtrack" << std::endl;
+		std::cout << "Search" << std::endl;
+		std::cout << "Inventory" << std::endl;
+		std::cout << "Quit" << std::endl << std::endl;
+	}
+}
+
+void Dungeon_room::Transfer_items(Hero & m_knight)
+{
+	for (int i = 0; i < List_of_items.size(); i++)
+	{
+		m_knight.Add_item_to_inventory(List_of_items[i]);
+		List_of_items.erase(List_of_items.begin() + i);
+	}
 }
 
 void Dungeon_room::Input()
@@ -119,7 +161,25 @@ std::string Dungeon_room::Get_name()
 	return name;
 }
 
+void Dungeon_room::Get_items()
+{
+	for (int i = 0; i < List_of_items.size(); i++)
+	{
+		std::cout << List_of_items[i]->Get_name() << std::endl;
+	}
+}
+
+int Dungeon_room::Get_item_number()
+{
+	return List_of_items.size();
+}
+
+int Dungeon_room::Get_enemies()
+{
+	return List_of_enemies.size();
+}
+
 void Dungeon_room::Examine()
 {
-	std::cout << description << std::endl;
+	std::cout << description;
 }

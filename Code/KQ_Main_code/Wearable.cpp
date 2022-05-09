@@ -1,17 +1,11 @@
 #include "Wearable.h"
 
-Wearable::Wearable(std::string m_name, std::string m_description, std::string m_first_target, double m_first_value, std::string m_second_target, double m_second_value, std::string m_equipment_slot)
+Wearable::Wearable(std::string m_name, std::string m_description, std::string m_first_target, double m_first_value, std::string m_second_target, double m_second_value, int m_equipment_slot) : Item(m_name, m_description, m_first_target, m_first_value, m_second_target, m_second_value)
 {
-	name = m_name;
-	description = m_description;
-	first_target = m_first_target;
-	first_value = m_first_value;
-	second_target = m_second_target;
-	second_value = m_second_value;
 	equipment_slot = m_equipment_slot;
 };
 
-Wearable::Wearable()
+Wearable::Wearable() : Item()
 {
 	//generates a number between 1 and 8 to generate a wearable
 	int item = std::rand() % 8 + 1;
@@ -25,7 +19,7 @@ Wearable::Wearable()
 		first_value = 4;
 		second_target = "dodge";
 		second_value = -0.2;
-		equipment_slot = "chest";
+		equipment_slot = 1;
 	}
 	else if (item == 2)
 	{
@@ -35,7 +29,7 @@ Wearable::Wearable()
 		first_value = 0;
 		second_target = "dodge";
 		second_value = 0.01;
-		equipment_slot = "head";
+		equipment_slot = 1;
 	}
 	else if (item == 3)
 	{
@@ -45,7 +39,7 @@ Wearable::Wearable()
 		first_value = 4;
 		second_target = "dodge";
 		second_value = -0.2;
-		equipment_slot = "chest";
+		equipment_slot = 3;
 	}
 	else if (item == 4)
 	{
@@ -55,7 +49,7 @@ Wearable::Wearable()
 		first_value = 2;
 		second_target = "dodge";
 		second_value = 0.02;
-		equipment_slot = "chest";
+		equipment_slot = 3;
 	}
 	else if (item == 5)
 	{
@@ -65,7 +59,7 @@ Wearable::Wearable()
 		first_value = 2;
 		second_target = "dodge";
 		second_value = -0.02;
-		equipment_slot = "hands";
+		equipment_slot = 4;
 	}
 	else if (item == 6)
 	{
@@ -75,7 +69,7 @@ Wearable::Wearable()
 		first_value = 1;
 		second_target = "dodge";
 		second_value = 0.02;
-		equipment_slot = "hands";
+		equipment_slot = 4;
 	}
 	else if (item == 7)
 	{
@@ -85,7 +79,7 @@ Wearable::Wearable()
 		first_value = 2;
 		second_target = "dodge";
 		second_value = -0.03;
-		equipment_slot = "feet";
+		equipment_slot = 6;
 	}
 	else if (item == 8)
 	{
@@ -95,35 +89,30 @@ Wearable::Wearable()
 		first_value = 1;
 		second_target = "dodge";
 		second_value = 0.03;
-		equipment_slot = "feet";
+		equipment_slot = 6;
+	}
+	else
+	{
+		name = "Steel armour";
+		description = "A set of steel armour, very shinny";
+		first_target = "defence";
+		first_value = 4;
+		second_target = "dodge";
+		second_value = -0.2;
+		equipment_slot = 1;
 	}
 };
 
-std::string Wearable::Get_slot()
-{
-	return equipment_slot;
-}
-
-void Wearable::Input()
-{
-	std::cout << "Nothing is here" << std::endl;
-}
-
-std::string Wearable::Get_name()
-{
-	return name;
-}
-
 void Wearable::Examine()
 {
-	std::cout << description << std::endl;
+	std::cout << "TEMP" << std::endl;
 }
 
-void Wearable::Get_affects(std::string& m_first_target, double& m_first_value, std::string& m_second_target, double& m_second_value, std::string& m_equipment_slot)
+void Wearable::Get_affects(std::string& m_first_target, double& m_first_value, std::string& m_second_target, double& m_second_value, int& m_special)
 {
 	m_first_target = first_target;
 	m_first_value = first_value;
 	m_second_target = second_target;
 	m_second_value = second_value;
-	m_equipment_slot = equipment_slot;
+	m_special = equipment_slot;
 }

@@ -2,6 +2,8 @@
 #include "Room.h"
 #include "Hero.h"
 #include "Enemy.h"
+
+#include "Item.h"
 #include "Consumable.h"
 #include "Weapon.h"
 #include "Wearable.h"
@@ -11,16 +13,17 @@ private:
 	std::string description;
 	int difficulty;
 	std::vector<Enemy> List_of_enemies;
-	std::vector<Weapon> List_of_weapon_items;
-	std::vector<Wearable> List_of_wearable_items;
-	std::vector<Consumable> List_of_consumable_items;
+	std::vector<Item*> List_of_items;
 
 public:
 	Dungeon_room(int m_difficulty);
-
+	int Combat(Hero);
+	void Display_room();
 	void Input() override;
-
+	void Transfer_items(Hero&);
 	std::string Get_name() override;
-
+	int Get_item_number();
+	void Get_items();
+	int Get_enemies();
 	void Examine() override;
 };
