@@ -105,10 +105,10 @@ int Enemy::Get_health()
 
 void Enemy::Transfer_items(std::vector <Item*> & m_vector)
 {
-	for (int i = 0; i < Inventory.size(); i++)
+	while (Inventory.size() > 0)
 	{
-		m_vector.push_back(Inventory[i]);
-		Inventory.erase(Inventory.begin() + i);
+		m_vector.push_back(Inventory[0]);
+		Inventory.erase(Inventory.begin() + 0);
 	}
 }
 
