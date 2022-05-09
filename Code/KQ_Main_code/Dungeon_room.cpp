@@ -144,10 +144,10 @@ void Dungeon_room::Display_room()
 
 void Dungeon_room::Transfer_items(Hero & m_knight)
 {
-	for (int i = 0; i < List_of_items.size(); i++)
+	while (List_of_items.size() > 0)
 	{
-		m_knight.Add_item_to_inventory(List_of_items[i]);
-		List_of_items.erase(List_of_items.begin() + i);
+		m_knight.Add_item_to_inventory(List_of_items[0]);
+		List_of_items.erase(List_of_items.begin() + 0);
 	}
 }
 
